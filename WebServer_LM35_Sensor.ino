@@ -8,8 +8,8 @@ int tempPin = A3;                         // lm35 pin
 float reading = 0;                        // temperature reading variable
 const float voltage_reference = 1.1;      // used to change the reference's voltage, could be changed depending of the board used
 
-byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};    // mac address off the board
-IPAddress ip(10, 156, 10, 13);                        // ip address off the board
+byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};    // mac address of the board
+IPAddress ip(10, 156, 10, 13);                        // ip address of the board
 EthernetServer server(80);                            // server to external access
 
 String led_operation;         // variable used to control the led on http access
